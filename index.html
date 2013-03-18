@@ -1,0 +1,181 @@
+<!DOCTYPE html>  
+<html>
+	<head>
+		<title></title> 
+		<meta charset="utf-8" />
+		<script src="cordova.js"></script>
+		<script src="kendo/js/jquery.min.js"></script>
+		<script src="kendo/js/kendo.mobile.min.js"></script>
+
+		<link href="kendo/styles/kendo.mobile.all.min.css" rel="stylesheet" />
+		<link rel="stylesheet" href="kendo/styles/ws.css" />
+		<link href="styles/main.css" rel="stylesheet" />     
+	</head>
+	<body>
+           
+        <div data-role="view" id="home" data-role="layout" data-init="initTouch" data-layout="default">
+    			<div class="header">
+    					<div class="headerimg"><img src="images/wslogo.png" /></div>
+    					<div class="headertext"><h1>Western Star Trucks Interior Options</h1></div>
+    			</div>
+                <div class="homepageimg">
+        			<img src="images/homepageimg.jpg" />
+        		</div>
+        		<div class="homepagecallout">
+        			<p>A useful guide to showing you how you new interior will look.</p>
+        			<a href="#cabtypes" data-role="button" ><img src="images/btn_climbin.png" alt="Climb In" ></a>
+                    
+        		</div>
+        		<div class="floatleft starimg">
+        			<img src="images/Serious_trucks_group.png" />
+        		</div>
+
+        </div>          
+
+		<div data-role="view" id="cabtypes" data-role="layout">
+            <div class="background">   
+            	<header data-role="header">
+            		<div data-role="navbar">
+                        <a id="cabtype01" data-role="button" href="#home" data-align="left">Back</a>
+                        <span data-role="view-title">Cab Types</span>
+            		</div>
+            	</header>
+                
+    			<h1>Cab Configurations:</h1>
+    			<h2>Choose one of these configurations</h2>
+
+    			<ul data-role="listview" data-style="inset" data-type="group">
+    				<li>
+    				    <a href="#dayCab" data-role="button"  ><img src="images/btn_conf01_off.png"  width="99%"  ></a>	
+    				</li>
+                    <li>
+    				    <a href="#sleeperLowRoof" data-role="button"><img src="images/btn_conf02_off.png"  width="99%" /></a>			
+    				</li>
+                    <li>
+    				    <a href="#sleeperHighRoof" data-role="button"><img src="images/btn_conf03_off.png"  width="99%" /></a>
+                    </li>
+    			</ul>
+            </div> 
+            
+        </div>
+                            
+        <div data-role="view" id="dayCab" data-role="layout">
+            <div class="background">
+                <header data-role="header">
+            		<div data-role="navbar">
+                        <a id="cabtype01" data-role="button" href="#cabtypes" data-align="left">Back</a>
+                        <span data-role="view-title">Day Cab</span>
+            		</div>
+            	</header>
+      
+    			<h1>Interior Colors</h1>
+    			<h2>Please choose a color for your DAY CAB</h2>
+    
+    			<ul data-role="listview" data-style="inset" data-type="group">
+    				<li>
+    					<a href="dayCabSmokyMountainGray.html" data-role="button"  ><img src="images/buttonsColor/btn_dayCab_SmokeyMountainGray_off.png" width="99%" /></a>
+                    </li>
+                    <li>
+    					<a href="dayCabMapleLeafRed.html" data-role="button"  rel="external"><img src="images/buttonsColor/btn_dayCab_MapleLeafRed_off.png" width="99%" /></a>
+                    </li>
+                    <li>
+    					<a href="dayCabPacificForestGreen.html" data-role="button"  rel="external"><img src="images/buttonsColor/btn_dayCab_PacificForestGreen_off.png" width="99%" /></a>
+                    </li>
+                    <li>
+    					<a href="dayCabBuckskin.html" data-role="button"  rel="external"><img src="images/buttonsColor/btn_dayCab_Buckskin_off.png" width="99%" /></a>
+                    </li>
+                    <li>
+    					<a href="dayCabBase.html" data-role="button"  rel="external"><img src="images/buttonsColor/btn_dayCab_Base_on.png" width="99%" /></a>
+                    </li>
+    			</ul>
+            </div>
+		</div>
+
+        <div data-role="view" id="sleeperHighRoof" data-role="layout">
+            <div class="background">
+                <header data-role="header">
+            		<div data-role="navbar">
+                        <a id="cabtype03" data-role="button" href="#cabtypes" data-align="left">Back</a>
+                        <span data-role="view-title">Sleeper Cab - High Roof</span>
+            		</div>
+            	</header>
+      
+    			<h1>Interior Colors</h1>
+    			<h2>Please choose a color for your HIGH ROOF SLEEPER</h2>
+    
+    			<ul data-role="listview" data-style="inset" data-type="group">
+    				<li>
+    					<a href="hiRoofSmokyMountainGray.html" data-role="button"  rel="external"><img src="images/buttonsColor/btn_sleeperHigh_SmokyMountainGray_off.png" width="99%" /></a>
+                    </li>
+                    <li>
+    					<a href="hiRoofMapleLeafRed.html" data-role="button"  rel="external"><img src="images/buttonsColor/btn_sleeperHigh_MapleLeafRed_off.png" width="99%" /></a>
+                    </li>
+                    <li>
+    					<a href="hiRoofPacificForestGreen.html" data-role="button"  rel="external"><img src="images/buttonsColor/btn_sleeperHigh_PacificForestGreen_off.png" width="99%" /></a>
+                    </li>
+                    <li>
+    					<a href="hihRoofBuckskin.html" data-role="button"  rel="external"><img src="images/buttonsColor/btn_sleeperHigh_Buckskin_off.png" width="99%" /></a>
+                    </li>
+
+                    
+
+    			</ul>
+            </div>
+		</div>
+                            
+
+                            
+         <div data-role="view" id="sleeperLowRoof" data-role="layout">
+            <div class="background">
+                <header data-role="header">
+            		<div data-role="navbar">
+                        <a id="cabtype02" data-role="button" href="#cabtypes" data-align="left">Back</a>
+                        <span data-role="view-title">Sleeper Cab - Low Roof</span>
+            		</div>
+            	</header>
+      
+    			<h1>Interior Colors</h1>
+    			<h2>Please choose a color for your LOW ROOF SLEEPER</h2>
+    
+    			<ul data-role="listview" data-style="inset" data-type="group">
+    				<li>
+    					<a href="lowRoofSmokyMountainGray.html" data-role="button"  rel="external"><img src="images/buttonsColor/btn_sleeperLow_SmokyMountainGray_off.png" width="99%" /></a>
+                    </li>
+                    <li>
+    					<a href="lowRoofMapleLeafRed.html" data-role="button"  rel="external"><img src="images/buttonsColor/btn_sleeperLow_MapleLeafRead_off.png" width="99%" /></a>
+                    </li>
+                    <li>
+    					<a href="lowRoofPacificForestGreen.html" data-role="button"  rel="external"><img src="images/buttonsColor/btn_sleeperLow_PacificForestGreen_off.png" width="99%" /></a>
+                    </li>
+                    <li>
+    					<a href="lowRoofBuckskin.html" data-role="button"  rel="external"><img src="images/buttonsColor/btn_sleeperLow_Buckskin_off.png" width="99%" /></a>
+                    </li>
+                    <li>
+    					<a href="lowRoofBase.html" data-role="button"  rel="external"><img src="images/buttonsColor/btn_sleeperLow_Base_off.png" width="99%" /></a>
+                    </li>
+    			</ul>
+            </div>
+		</div>
+
+                            
+        <script>
+            console.log("here in view-slide");
+			var app = new kendo.mobile.Application(document.body, { transition: "slide", layout: "mobile-tabstrip" });
+		</script>
+        <script>
+      //      var app = new kendo.mobile.Application();
+            function initTouch(e) {
+                $(".touch-surface").kendoTouch({
+                    tap: function(e) {
+                        console.log(e.touch.target + " was tapped");
+                        window.location.assign(this.element.prop("id"));
+                    }
+                });
+            }
+        </script>
+        <script>
+          var app = new kendo.mobile.Application();
+      //    app.showLoading();
+        </script>                    
+	</body>
+</html>
